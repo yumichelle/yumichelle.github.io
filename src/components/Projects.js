@@ -1,6 +1,6 @@
 import React from 'react'
-import URL from './images/url.png'
-import './App.css'
+import URL from '../images/url.png'
+import '../css/App.css'
 
 class Projects extends React.Component {
 

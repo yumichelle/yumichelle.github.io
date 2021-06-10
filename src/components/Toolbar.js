@@ -1,25 +1,26 @@
 import React from 'react'
-import './App.css'
+// import { Link } from 'react-router-dom'
+import '../css/App.css'
 
 function nav() {
 return (
     <div className="nav center">
-      <a href="./src/About/#about" className="box">
+      <a href ="#about" className="box">
         <span role="img" aria-label="woman">👩</span>
         about
       </a>
 
-      <a href="./src/Experience/#experience" className="box">
+      <a href="#experience" className="box">
         <span role="img" aria-label="Suitcase">💼</span>
         experience
       </a>
 
-      <a href="./src/Projects/#projects" className="box">
+      <a href="#projects" className="box">
         <span role="img" aria-label="Laptop">💻</span>
         projects
       </a>
           
-      <a href="./src/Skills/#skills" className="box">
+      <a href="#skills" className="box">
         <span role="img" aria-label="Trophy">🏆</span>
         skills
       </a>

@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css'
+import '../css/App.css'
 import Toolbar from './Toolbar'
 import About from './About'
 import Experience from './Experience'

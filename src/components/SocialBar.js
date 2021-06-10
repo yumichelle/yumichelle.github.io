@@ -1,9 +1,9 @@
 import React from 'react'
-import './App.css'
-import Linkedin from './images/linkedin.svg'
-import Email from './images/email.svg'
-import Github from './images/github.svg'
-import Instagram from './images/instagram.svg'
+import '../css/App.css'
+import Linkedin from '../images/linkedin.svg'
+import Email from '../images/email.svg'
+import Github from '../images/github.svg'
+import Instagram from '../images/instagram.svg'
 
 function SocialBar(){
   return(
