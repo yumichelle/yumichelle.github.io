@@ -1,11 +1,12 @@
-import React from 'react';
+import React from 'react'
+import { Element } from 'react-scroll'
 
 function About() {
-  var aboutOpentag = "<about>";
-  var aboutClosetag = "</about>";
+  var aboutOpentag = "<about>"
+  var aboutClosetag = "</about>"
 
   return (
-    <div id="about" style={{padding:"30px"}}>
+    <Element id="about" style={{padding:"30px"}}>
       {aboutOpentag}
       <h2>Hello,</h2>
       <span role="img" aria-label="tea">🍵</span> Name: michelle.
@@ -21,7 +22,7 @@ function About() {
       <span role="img" aria-label="thunder">⚡</span> Fun fact: i'm left-handed.
       <br />
       {aboutClosetag}
-    </div>
+    </Element>
   );
 }
 

@@ -1,14 +1,17 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import '../css/App.css'
 
 function nav() {
 return (
     <div className="nav center">
-      <a href ="#about" className="box">
+      <Link 
+        to ="about"
+        spy={true} smooth={true} duration={500}  
+        className="box">
         <span role="img" aria-label="woman">👩</span>
         about
-      </a>
+      </Link>
 
       <a href="#experience" className="box">
         <span role="img" aria-label="Suitcase">💼</span>
