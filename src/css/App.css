@@ -9,6 +9,7 @@ html, body {
   margin: 0;
   font-family: Poppins;
   font-size: 16px;
+  font-size: 1.5vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /*min-height: 100vh;*/
@@ -23,15 +24,23 @@ html, body {
   padding: 0px;
 }
 
-.column {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
   float: left;
-  padding: 10px;
-}
-.left{
-  width: 75%;
-}
-.right{
-  width: 25%;
+  /* margin:15px; */
+  padding: 5px;
+  /* border: 1px solid red; */
 }
 
 a:link, a:active, a:visited{
@@ -164,7 +173,7 @@ a:hover{
   min-height: 10vh;
   padding: 5px;
   justify-content: space-evenly;
-  width: calc(400px + 6vmin);
+  width: 65%;
 }
 
 .box{
@@ -172,7 +181,7 @@ a:hover{
   cursor: pointer;
   flex-direction: column;
   font-weight: 600;
-  font-size: calc(10px + .5vw);
+  font-size: 1rem;
   line-height: normal;
   text-align: center;
   /* position: relative; */
@@ -212,6 +221,25 @@ a:hover{
   transform: rotateX(180deg);
 }
 
+.scrollbar::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  flex: 1;
+  overflow-x: scroll;
+  white-space: nowrap;
+  margin: 5px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #4ECCA3;
+  border-radius: 10px;
+  height: 5px;
+  width: 5px;
+}
+
+
+
+
+
 #wrap{
   /* margin: 0 auto; */
   width: calc(200px);
@@ -230,8 +258,6 @@ a:hover{
   white-space: pre-wrap;
   display: inline-block;
   word-wrap: break-word;
-  text-size-adjust: 80%;
-  font-size: 100%;
 }
 .content p{
   /* margin: 10px 50px 15px 50px; */
@@ -302,6 +328,7 @@ a:hover{
 	background-color: #4ECCA3;
   border-radius: 30px;
   /* color: rgb(175, 62, 62); */
+  font-size: initial;
   list-style-type: none;
   margin: 0px 0px 10px 0px;
 	-moz-transition:all 0.25s ease-in-out;

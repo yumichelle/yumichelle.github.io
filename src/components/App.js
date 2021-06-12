@@ -6,19 +6,20 @@ import Experience from './Experience'
 import Projects from './Projects'
 import Skills from './Skills'
 import SocialBar from './SocialBar'
-
+import Footer from './Footer'
 
 function App() {
   return (
-    <div style={{position: "relative"}}>
-      <div  class="column left"> 
+    <div>
+      <div class="col-11">
         <Toolbar class="center" />
         <About />
         <Experience />
         <Projects />
-        <Skills />
-      </div>
-      <SocialBar />
+        <Skills /> 
+        <SocialBar /> 
+        <Footer />
+      </div> 
     </div>
   )
 }

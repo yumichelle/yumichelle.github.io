@@ -7,7 +7,7 @@ import Instagram from '../images/instagram.svg'
 
 function SocialBar(){
   return(
-    <div class="column right" style={{display: "initial"}}>
+    <div style={{display: "initial"}}>
       <ul class="sidebar">
 
         <li class="tooltip">

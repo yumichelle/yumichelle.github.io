@@ -1,10 +1,11 @@
 import React from 'react'
+import { Element } from 'react-scroll'
 
 function Experience(){
   var experienceOpentag = "<experience>"
   var experienceClosetag = "</experience>"
   return (
-    <div id="experience" style={{padding:"30px"}}>
+    <Element id="experience" style={{padding:"30px"}}>
       {experienceOpentag}
 
       <div class="horibar" id="flipped">
@@ -84,7 +85,7 @@ function Experience(){
       </div>
       
       {experienceClosetag}
-    </div>
+    </Element>
   )
 }
 

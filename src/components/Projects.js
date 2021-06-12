@@ -1,4 +1,5 @@
 import React from 'react'
+import { Element } from 'react-scroll'
 import URL from '../images/url.png'
 import '../css/App.css'
 
@@ -8,11 +9,11 @@ class Projects extends React.Component {
     var projectsOpentag = "<projects>"
     var projectsClosetag = "</projects>"
     return (
-      <div style={{ marginLeft: "30px"}}>
+      <Element style={{ marginLeft: "30px"}}>
         {projectsOpentag}
         <div>
 
-          <div class="content projcontainer horibar" onClick={this.toggleDiv}>
+          <div class="content projcontainer scrollbar" onClick={this.toggleDiv}>
             <Show 
               title="Anime Recommendation System" 
               descript= "Recommends anime based on a comparison between the ratings and the content of other anime." 
@@ -20,7 +21,7 @@ class Projects extends React.Component {
               url="https://github.com/yumichelle/Anime-Recommendation-System" />
           </div>
 
-          <div class="content projcontainer horibar" onClick={this.toggleDiv}>
+          <div class="content projcontainer scrollbar" onClick={this.toggleDiv}>
             <Show 
               title="Frobbozz Magic Pancake House" 
               descript= "Implemented an algorithm for a back-end program in Java that aids a waitress in stacking the pancakes correctly so burned sides are facing down." 
@@ -28,7 +29,7 @@ class Projects extends React.Component {
               url="https://github.com/yumichelle/Frobbozz-Magic-Pancake-House" />
           </div>
 
-          <div class="content projcontainer horibar" onClick={this.toggleDiv}>
+          <div class="content projcontainer scrollbar" onClick={this.toggleDiv}>
             <Show 
               title="got-to-go" 
               descript= "Utilized Google Cloud Platform in a team of three to create a web app that aids people to easily find public restroom facilities catering to their needs."
@@ -38,7 +39,7 @@ class Projects extends React.Component {
 
         </div>
         {projectsClosetag}
-      </div>
+      </Element>
     );
   }
 }

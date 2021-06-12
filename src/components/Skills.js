@@ -1,4 +1,5 @@
 import React from 'react'
+import { Element } from 'react-scroll'
 
 var skillsArr = [
   "HTML", 
@@ -33,11 +34,11 @@ function Skills(){
   var skillsOpentag  = "<skills>"
   var skillsClosetag = "</skills>"
   return(
-    <div id="skills" style={{padding: "30px"}}>
+    <Element id="skills" style={{padding: "30px"}}>
       {skillsOpentag}
       <Front cards={skillsArr}/>
       {skillsClosetag}
-    </div>
+    </Element>
   )
 }
 
