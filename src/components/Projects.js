@@ -17,7 +17,12 @@ class Projects extends React.Component {
             <Show 
               title="Anime Recommendation System" 
               descript= "Recommends anime based on a comparison between the ratings and the content of other anime." 
-              skillsList= {["python", "jupyter notebook"]}
+              skillsList= {["pandas", "sklearn", "scikit-image", 
+                            "numpy", "csr_matrix", "pickle", 
+                            "NearestNeighbors", "TfidfVectorizer", 
+                            "sigmoid_kernel", "Jupyter Notebook",
+                            "Flask", "Heroku"
+              ]}
               url="https://github.com/yumichelle/Anime-Recommendation-System" />
           </div>
 
