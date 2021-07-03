@@ -109,6 +109,44 @@ a:hover{
   50%{background-position: 100% 50%}
   100%{background-position: 0% 50%}
 }
+.backlight{
+  position: relative;
+  background: linear-gradient(0deg, #4ECCA3, #ffbf69);
+  margin-top: 50px;
+  min-height: 10vh;
+  width: 65%;
+}
+.backlight:before, .backlight:after {
+  content: '';
+  position: absolute;
+  left: 0em;
+  top: 0em;
+  background: linear-gradient(45deg, #ff9f1c, #ffbf69, #cbf3f0, #4ECCA3, #2ec4b6);
+  background-size: 400%;
+  border-radius: 10px; 
+  width: 100%;
+  height: 98%;
+  z-index: -1;
+  animation: anim-moving-glow 10s linear infinite;   
+}
+.backlight:after {
+  filter: blur(8px);
+} 
+
+
+@keyframes anim-moving-glow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
 
 /* nav bar */
 .nav {

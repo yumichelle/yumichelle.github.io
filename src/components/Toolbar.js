@@ -4,7 +4,7 @@ import '../css/App.css'
 
 function nav() {
 return (
-    <div className="nav center">
+    <div className="nav backlight center">
       <Link 
         to ="about"
         spy={true} smooth={true} duration={500}  
