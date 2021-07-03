@@ -2,6 +2,7 @@
 /* $dark-mode-bg: #393E46, 100%;
 $light-mode-bg: #FDFDFD, 100%; */
 
+/* div{ box-shadow: 0px 4px 4px rgb(200, 200, 200); } */
 
 html, body {
   background-color: white;
@@ -72,108 +73,53 @@ a:hover{
 }
 
 
-/* toggle */
-.darktheme, .darktheme body{
-  background-color: #393E46;
-  color: white;
-}
-.toggle {
-    height: 100px;
-    width: 200px;
-    border-radius: 50px;
-    margin: auto;
-    background-image: linear-gradient(aqua, skyblue);
-    position: relative;
-    cursor: pointer;
-}
+/* gradients */
+.gradient {
+  background: rgb(78,204,163);
+  background: -moz-linear-gradient(50deg, rgba(78,204,163,1) 10%, rgba(253,187,45,1) 100%);
+  background: -webkit-linear-gradient(50deg, rgba(78,204,163,1) 10%, rgba(253,187,45,1) 100%);
+  background: linear-gradient(50deg, rgba(78,204,163,1) 10%, rgba(253,187,45,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ecca3",endColorstr="#fdbb2d",GradientType=1);
+  background-size: 200% 200%;
+  left: 11vw;
+  top: -14vw;
+  width: 20%;
+  height: 40em;
+  position: absolute;
+  transform: rotate(40deg);
+  transform-origin: top left;
+  z-index: -1;
+  -webkit-animation: Animation 5s ease infinite;
+  -moz-animation: Animation 5s ease infinite;
+  animation: Animation 5s ease infinite;
 
-.toggle.night {
-    background-image: linear-gradient(midnightblue, rebeccapurple);
 }
-
-.notch {
-    height: 90px;
-    width: 90px;
-    border-radius: 50%;
-    background: yellow;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    box-shadow: 0 0 5px yellow;
-    z-index: 1;
-    transition: all 0.3s ease;
+@-webkit-keyframes Animation {
+  0%{background-position: 0% 50%}
+  50%{background-position: 100% 50%}
+  100%{background-position: 0% 50%}
 }
-
-.night .notch {
-    background: whitesmoke;
-    box-shadow: 0 0 5px whitesmoke;
-    transform: translate(100px, 0);
+@-moz-keyframes Animation {
+  0%{background-position: 0% 50%}
+  50%{background-position: 100% 50%}
+  100%{background-position: 0% 50%}
 }
-
-.shape {
-    position: absolute;
-    background: whitesmoke;
-    border-radius: 50%;
-    transition: all 0.3s ease;
+@keyframes Animation { 
+  0%{background-position: 0% 50%}
+  50%{background-position: 100% 50%}
+  100%{background-position: 0% 50%}
 }
-
-.shape.sm {
-    height: 5px;
-    width: 50px;
-    top: 50%;
-    left: 60%;
-}
-
-.shape.md {
-    height: 10px;
-    width: 75px;
-    top: 25%;
-    left: 25%;
-    z-index: 2;
-}
-
-.shape.lg {
-    height: 15px;
-    width: 100px;
-    bottom: 20px;
-    left: 25%;
-}
-
-.night .shape {
-    background: lightgray;
-    box-shadow: 0 0 10px 2px violet;
-}
-
-.night .shape.sm {
-    height: 5px;
-    width: 5px;
-    transform: translate(-40px, 0);
-}
-
-.night .shape.md {
-    height: 10px;
-    width: 10px;
-    transform: translate(10px, 0);
-}
-
-.night .shape.lg {
-    height: 15px;
-    width: 15px;
-    transform: translate(-10px, 0);
-}
-
 
 /* nav bar */
 .nav {
   background: #4ECCA3;
-  box-shadow: 0px 4px 4px rgb(200, 200, 200);
   border-radius: 10px;
   color: #393E46;
   margin-top: 50px;
   min-height: 10vh;
-  padding: 5px;
+  padding: 5px; 
   justify-content: space-evenly;
-  width: 65%;
+  width: 65%;  
 }
 
 .box{
@@ -188,6 +134,16 @@ a:hover{
 }
 .box:hover {
   color: white;
+}
+
+/* about me */
+.gradualcolor{
+  animation: colorchange 15s infinite;
+}
+@keyframes colorchange {
+  0% {background-color: #4ECCA3;}
+  50% {background-color: white;}
+  100% {background-color: #4ECCA3;}
 }
 
 /* experience */

@@ -9,8 +9,18 @@ import SocialBar from './SocialBar'
 import Footer from './Footer'
 
 function App() {
+  const wrapper = {
+    width: "100%",
+    position: "relative",
+  }
+  const content={
+    position: "absolute",
+    zIndex:10,
+  }
   return (
-    <div>
+    <div style={wrapper}>
+      <div class="gradient"></div>
+
       <div class="col-11">
         <Toolbar class="center" />
         <About />
@@ -19,6 +29,8 @@ function App() {
         <Skills /> 
         <SocialBar /> 
         <Footer />
+      
+      {/* <div class="gradient"></div> */}
       </div> 
     </div>
   )

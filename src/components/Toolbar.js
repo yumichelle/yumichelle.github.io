@@ -46,6 +46,7 @@ return (
         <p role="img" aria-label="Camera">📸</p> 
         photos
       </a>
+
     </div>
   )
 }

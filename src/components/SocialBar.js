@@ -18,10 +18,10 @@ function SocialBar(){
         </li>
 
         <li class="tooltip">
-          <a href="mailto:michelle.yu@techtogether.io">
+          <a href="https://www.notion.so/yumichelle/Contact-Form-37bbaf465f9c420d93524cd2f2204a64">
             <img src={Email} width="50" height="50" alt="email" class="contrast" />
           </a>
-          <span> E-mail </span>
+          <span> Contact Me </span>
         </li>
 
         <li class="tooltip">

@@ -10,6 +10,19 @@ function Experience(){
 
       <div class="horibar" id="flipped">
        <div id="wrap"> 
+
+          <div class="content" id="flipped">
+            <p>
+              <b>
+                Software Engineer Intern
+              </b>
+              <h4>
+                @ TargetSmart
+              </h4>
+              2021 - 2021
+            </p>
+          </div>
+
           <div class="content" id="flipped">
             <p>
               <b>
@@ -17,6 +30,18 @@ function Experience(){
               </b>
               <h4>
                 @ TechTogether NY
+              </h4>
+              2020 - 2021
+            </p>
+          </div>
+
+          <div class="content" id="flipped">
+            <p>
+              <b>
+                Data Science Fellow
+              </b>
+              <h4>
+                @ CUNY Tech Prep
               </h4>
               2020 - 2021
             </p>

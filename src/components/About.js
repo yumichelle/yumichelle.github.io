@@ -6,7 +6,7 @@ function About() {
   var aboutClosetag = "</about>"
 
   return (
-    <Element id="about" style={{padding:"30px"}}>
+    <Element id="about" style={{padding:"30px"}} >
       {aboutOpentag}
       <h2>Hello,</h2>
       <span role="img" aria-label="tea">🍵</span> Name: michelle.
